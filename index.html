@@ -17,6 +17,17 @@
       href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .font-sora {
+        font-family: "Sora", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+      .font-adlam {
+        font-family: "ADLaM Display", serif;
+        font-style: normal;
+      }
+    </style>
     <!-- font awesome links -->
     <link
       rel="stylesheet"
@@ -38,6 +49,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "primary-color": "#ffdc26",
             },
           },
         },
@@ -45,6 +57,51 @@
     </script>
   </head>
   <body>
-    
+    <!-- Header Section -->
+    <header>
+      <!-- Navbar -->
+      <nav
+        class="font-sora h-16 lg:h-20 px-4 md:px-8 lg:px-16 py-3 md:py-7 mb-24 flex flex-row justify-between items-center bg-[#FFF9F4] text-bold"
+      >
+        <div class="flex flex-row items-center space-x-3 ">
+          <img class="text-5xl" src="images/logo-header.png" alt="Header_Logo" />
+          <h2 class="hidden lg:inline-block lg:text-2xl">Browse<span class="text-[#ffdc26]">4</span>Pet</h2>
+        </div>
+        <div class="hidden lg:inline-block space-x-8 text-xl">
+          <a href="#">Find a pet</a>
+          <a href="#">Breeds</a>
+          <a href="#">Contact us</a>
+        </div>
+        <div class="hidden lg:inline-block text-xl space-x-3">
+          <i class="fa-regular fa-bell"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <button class="btn text-base border-[#ffdc26] border-4">Button</button>
+          <button class="btn text-base bg-[#ffdc26]">Register</button>
+        </div>
+        <div>
+          <i class="text-2xl lg:hidden fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <!-- Banner -->
+       <section class="container mx-auto px-4">
+        <div class="space-y-4 w-full md:w-170 flex flex-col z-10 relative bottom-0">
+          <h1 class="font-adlam text-3xl lg:text-5xl">
+            Pamper Your Pet,
+            <br>Because They Deserve 
+            <br>the Best
+          </h1>
+          <p class="font-sora text-base lg:text-xl text-wrap text-[rgba(0,0,0,0.7)]">
+            Discover a world of treats, toys, and essentials handpicked for 
+            <br class="hidden md:inline-block">your furry friends. Shop now and make tails wag with joy!
+          </p>
+          <div>
+            <button class="btn bg-[#fcdd26] text-base md:text-xl">Find a Pet</button>
+          </div>
+        </div>
+        <div class="z-0">
+          <img class="relative bottom-20 md:bottom-64 w-full z-0" src="images/cat-big.png" alt="Banner_Cat">
+        </div>
+       </section>
+    </header>
   </body>
 </html>
